@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, {useState} from"react";
+import './App.css';
 
 
 export default function Weather(props) {
@@ -17,10 +18,10 @@ export default function Weather(props) {
 
   if (weatherInfo.ready) {
     return (
-      <div>
+      <div className="Weather">
         <form>
           <div className="row">
-            <div className="c0l-9">
+            <div className="col-9">
               <input
                 type="search"
                 autocomplete="off"
@@ -59,9 +60,8 @@ export default function Weather(props) {
             </div>
           </div>
         </div>
-        );
       </div>
-    )
+    );
   } else {
     let apiKey = "70eb5822db0e7a548a59c84b59fa1550";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${apiKey}&units=metric`;
