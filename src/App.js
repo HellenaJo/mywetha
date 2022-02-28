@@ -4,13 +4,10 @@ import Weather from './Weather';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
          <Weather city="kenya" />
-        <h1>
-          hello nash
-        </h1>
-      </header>
-    </div>
+  <a href="https://github.com/HellenaJo/mywetha" target="_blank" id="github" rel="noreferrer">GitHub</a>
+  <a href="https://www.netlify.com" target="_blank" id="netlify" rel="noreferrer"> Netlify</a>
+  </div>
   );
 }
 
